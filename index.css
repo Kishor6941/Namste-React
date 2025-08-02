@@ -1,3 +1,128 @@
-#h1-element{
-    color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: bisque;
+  padding: 10px 20px;
+  align-items: center;
+  color: black;
+  margin-top: 0px;
+}
+.logo-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.nav-menu ul li {
+  list-style: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-menu ul li {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.nav-menu ul li:hover {
+  color: #f0ad4e;
+  transition: color 0.3s ease;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+.search-bar input:focus {
+  border-color: #f0ad4e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(240, 173, 78, 0.5);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease,
+    font-weight 0.3s ease;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #f0ad4e;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+.restrocards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.restrocard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.restrocard {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 12px;
+  width: 200px;
+  text-align: center;
+}
+
+.restro-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.restro-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.restro-cuisine {
+  font-size: 16px;
+  color: #555;
+}
+.footer {
+  background-color: bisque;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
